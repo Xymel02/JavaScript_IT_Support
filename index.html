@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Support Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>IT Support Assistant</h1>
+        <p>Basic Computer Troubleshooting System</p>
+    </header>
+
+    <main class="container">
+        <section class="card">
+            <h2>Submit a Support Request</h2>
+
+            <label for="userName">Your Name</label>
+            <input type="text" id="userName" placeholder="Enter your name">
+
+            <label for="computerName">Computer Name</label>
+            <input type="text" id="computerName" placeholder="any pc.">
+
+            <label for="issue">Select a Problem</label>
+            <select id="issue">
+                <option value="">-- Select a problem --</option>
+                <option value="internet">No Internet Connection</option>
+                <option value="printer">Printer Not Working</option>
+                <option value="slow">Computer Running Slowly</option>
+                <option value="password">Password Problem</option>
+                <option value="software">Software Problem</option>
+            </select>
+
+            <button type="button" id="diagnoseButton">
+                Get Troubleshooting Steps
+            </button>
+
+            <div id="result" class="result" hidden></div>
+        </section>
+
+        <section class="card">
+            <h2>Support Ticket Log</h2>
+            <p>Number of tickets: <strong id="ticketCount">0</strong></p>
+
+            <button type="button" id="showTicketsButton" class="secondary">
+                Show Saved Tickets
+            </button>
+
+            <button type="button" id="clearTicketsButton" class="danger">
+                Clear Tickets
+            </button>
+
+            <div id="ticketList"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>IT Support Assistant | JavaScript Practice Project</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
